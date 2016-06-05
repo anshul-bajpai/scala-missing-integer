@@ -10,6 +10,10 @@
 //  A[5] = 2
 //the function should return 5.
 
+//logic to solve this is: first sort the array in ascending order and then traverse the array starting with second element and every 
+//time find out the difference current element and previous element and if the difference is more than 1 which means current element 
+//minus 1 is the missing integer.
+
 class Solution {
   def calculate(elements: Array[Int]): Int = {
     val sortedArray = elements.sorted
